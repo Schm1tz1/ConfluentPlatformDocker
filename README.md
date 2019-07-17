@@ -1,29 +1,23 @@
 # Confluent Platform in Docker
 ## Initial Checkout and Installation
-Checkout desired version from GitHub:
-```
-git clone https://github.com/confluentinc/cp-docker-images
-cd cp-docker-images
-git checkout 5.2.2-post
-```
-Compose and initially download and build the docker containers:
-```
-cd examples/cp-all-in-one/
+Upon checkout, the external submodule (https://github.com/confluentinc/cp-docker-images) will automatically be imported. Not it's time to compose and initially download and build the docker containers:
+```bash
+cd cp-docker-images/examples/cp-all-in-one/
 docker-compose up -d --build
 ```
 
 ## Starting/Stopping CP Docker
 Navigate to the directory and use docker-compose to start/stop CP:
-```
-cd examples/cp-all-in-one/
+```bash
+cd cp-docker-images/examples/cp-all-in-one/
 docker-compose up -d
 ```
 And for stopping:
-```
-cd examples/cp-all-in-one/
+```bash
+cd cp-docker-images/examples/cp-all-in-one/
 docker-compose stop
 ```
-To faciliate the docker handling, please use the scripts provided (adapt the path inside first):
+To faciliate the docker handling, you can use the scripts provided (Windows script so far):
 - START.bat
 - STATUS.bat
 - STOP.bat
