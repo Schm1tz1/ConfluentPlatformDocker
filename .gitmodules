@@ -1,0 +1,3 @@
+[submodule "cp-docker-images"]
+	path = cp-docker-images
+	url = https://github.com/confluentinc/cp-docker-images.git
