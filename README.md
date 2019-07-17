@@ -18,11 +18,11 @@ cd cp-docker-images/examples/cp-all-in-one/
 docker-compose stop
 ```
 To faciliate the docker handling, you can use and adapt the scripts provided:
-- START.sh/.bat
-- STATUS.sh/.bat
-- STOP.sh/.bat
-- BASH @BROKER.sh/bat
-- ConsoleConsumer_exampleTopic.bat
+- START(.sh/.bat)
+- STATUS(.sh/.bat)
+- STOP(.sh/.bat)
+- BASH @BROKER(.sh/.bat)
+- ConsoleConsumer_exampleTopic(.sh/.bat)
 
 ## Known Bugs
 1.  In case the startup of Zookeeper Container fails with an error similar to <b>"Cannot start service zookeeper: b'driver failed programming external connectivity on endpoint zookeeper"</b> (Well known on Windows hosts), simply restart Docker!
